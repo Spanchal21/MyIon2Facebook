@@ -1,0 +1,32 @@
+<ion-navbar *navbar>
+    <ion-title>Facebook</ion-title>
+</ion-navbar>
+<ion-content padding class="home">
+    <div>
+        My name is {{myname}}.
+   
+        {{response}}
+
+
+        <br/> Name : {{name}}
+        <br/> Birthday : {{birthday}}
+        <br/> Email : {{email}}
+        <br/>
+        <img src="{{picture}}">
+    </div>
+
+    <ion-grid>
+    <ion-row>
+        <ion-col>
+            <button (click)="login()">
+                <ion-icon name="logo-facebook"> Login</ion-icon>
+            </button>
+             <!-- <button (click)="getdetails()">Get Detailsk</button> -->
+            <button (click)="logout()">
+                <ion-icon name="log-out">Logut</ion-icon>
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>
+
